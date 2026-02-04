@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фильтр товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Фильтр товаров</h1>
+    <div class="filters">
+        <label>
+            Максимальная цена:
+            <input type="number" id="maxPrice" value="600">
+        </label>
+
+        <label>
+            Категория:
+            <select id="category">
+                <option value="all">Все</option>
+                <option value="electronics">Электроника</option>
+                <option value="accessories">Аксессуары</option>
+            </select>
+        </label>
+
+        <label>
+            Минимальный рейтинг:
+            <input type="number" id="minRating" value="4" step="0.1">
+        </label>
+
+        <label>
+            <input type="checkbox" id="onlyInStock" checked>
+            Только в наличии
+        </label>
+
+        <button onclick="filterProducts()">Применить фильтр</button>
+
+    </div>
+
+    <h2>Результат:</h2>
+    <div id="result" class="products"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

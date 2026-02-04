@@ -1,0 +1,96 @@
+/* ===== Страница, блок фильтров=====*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #f5f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #222;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.filters {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+input,
+select {
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #007acc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* ===== Карточки ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.category {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.rating {
+    font-size: 13px;
+    color: #444;
+}
+
+.out {
+    color: #c0392b;
+    font-size: 13px;
+}
